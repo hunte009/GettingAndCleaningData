@@ -1,5 +1,7 @@
 library(dplyr)
-setwd("C:/Users/User/Documents/coursera/Getting and Cleaning Data")
+## This R script will run as long as the Samsung data is in your working directory. 
+## Uncomment the following line and mofify it to point to the Samsung data if it is NOT in your working directory.
+## setwd("C:/Users/User/Documents/coursera/Getting and Cleaning Data")
 features <- read.table("UCI HAR Dataset/features.txt", col.names = c("n","functions"))
 activities <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("code", "activity"))
 subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt", col.names = "subject")
